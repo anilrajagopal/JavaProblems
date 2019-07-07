@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Suite]" parallel="none">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="pwd" value="crmsfa"/>
+  <parameter name="url" value="http://leaftaps.com/opentaps"/>
+  <parameter name="username" value="DemoSalesManager"/>
+  <test name="Test(failed)" parallel="none">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="sanity"/>
+        <include name="regression"/>
+        <include name="common"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="week3.testcases.project.EditContactTc2">
+        <methods>
+          <include name="editexecuteCase2"/>
+        </methods>
+      </class> <!-- week3.testcases.project.EditContactTc2 -->
+      <class name="week3.testcases.project.CreateLeadTC">
+        <methods>
+          <include name="closeBrowserAction"/>
+          <include name="login"/>
+          <include name="loginApp"/>
+        </methods>
+      </class> <!-- week3.testcases.project.CreateLeadTC -->
+      <class name="week3.testcases.project.DummyDeleteContact">
+        <methods>
+          <include name="dummyDeleteAccount"/>
+        </methods>
+      </class> <!-- week3.testcases.project.DummyDeleteContact -->
+      <class name="week3.testcases.project.DummyDuplicateLead">
+        <methods>
+          <include name="dummyDuplicateAccount"/>
+        </methods>
+      </class> <!-- week3.testcases.project.DummyDuplicateLead -->
+      <class name="week3.testcases.project.DeactivateContactTc01">
+        <methods>
+          <include name="closeBrowserAction"/>
+          <include name="deactivateCase"/>
+          <include name="loginApp"/>
+        </methods>
+      </class> <!-- week3.testcases.project.DeactivateContactTc01 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
